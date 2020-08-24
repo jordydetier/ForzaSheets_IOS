@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43EC341655D5596844677490 /* Pods_ForzaSheets_ForzaSheetsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE7582ED2C903EE4403A849 /* Pods_ForzaSheets_ForzaSheetsUITests.framework */; };
+		B73B92DCF8E042F90C129FCB /* Pods_ForzaSheetsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734A3E085692FCB6E3736CFA /* Pods_ForzaSheetsTests.framework */; };
+		BCFB4E1B75BCD0508476B6C5 /* Pods_ForzaSheets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD71306D18991A443EF8873 /* Pods_ForzaSheets.framework */; };
+		DF47163624F3D4B800F83E01 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF47163524F3D4B800F83E01 /* Team.swift */; };
+		DF47163824F3D7AD00F83E01 /* Standing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF47163724F3D7AD00F83E01 /* Standing.swift */; };
+		DF47163C24F3DB1C00F83E01 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF47163B24F3DB1C00F83E01 /* ApiManager.swift */; };
 		DFE298CC24E42EB800670996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298CB24E42EB800670996 /* AppDelegate.swift */; };
 		DFE298CE24E42EB800670996 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298CD24E42EB800670996 /* SceneDelegate.swift */; };
-		DFE298D024E42EB800670996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298CF24E42EB800670996 /* ViewController.swift */; };
+		DFE298D024E42EB800670996 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298CF24E42EB800670996 /* HomeViewController.swift */; };
 		DFE298D324E42EB800670996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE298D124E42EB800670996 /* Main.storyboard */; };
 		DFE298D524E42EBB00670996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE298D424E42EBB00670996 /* Assets.xcassets */; };
 		DFE298D824E42EBB00670996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE298D624E42EBB00670996 /* LaunchScreen.storyboard */; };
 		DFE298E324E42EBB00670996 /* ForzaSheetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298E224E42EBB00670996 /* ForzaSheetsTests.swift */; };
 		DFE298EE24E42EBB00670996 /* ForzaSheetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298ED24E42EBB00670996 /* ForzaSheetsUITests.swift */; };
+		DFE298FD24E4360600670996 /* StandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298FC24E4360600670996 /* StandingsViewController.swift */; };
+		DFE298FF24E4361500670996 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE298FE24E4361500670996 /* TeamDetailsViewController.swift */; };
+		DFE2990124E4362100670996 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE2990024E4362100670996 /* PlayerDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CE7582ED2C903EE4403A849 /* Pods_ForzaSheets_ForzaSheetsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForzaSheets_ForzaSheetsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		282F61515D52A0EEFBAE2C60 /* Pods-ForzaSheets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForzaSheets.debug.xcconfig"; path = "Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets.debug.xcconfig"; sourceTree = "<group>"; };
+		734A3E085692FCB6E3736CFA /* Pods_ForzaSheetsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForzaSheetsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F75E23891A55A7C1AAF5BB7 /* Pods-ForzaSheets-ForzaSheetsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForzaSheets-ForzaSheetsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC9E64001BE3996B77D9C41A /* Pods-ForzaSheetsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForzaSheetsTests.debug.xcconfig"; path = "Target Support Files/Pods-ForzaSheetsTests/Pods-ForzaSheetsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD71306D18991A443EF8873 /* Pods_ForzaSheets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForzaSheets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA0D526F21B668DB103C4DB /* Pods-ForzaSheets-ForzaSheetsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForzaSheets-ForzaSheetsUITests.release.xcconfig"; path = "Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF47163524F3D4B800F83E01 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		DF47163724F3D7AD00F83E01 /* Standing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standing.swift; sourceTree = "<group>"; };
+		DF47163B24F3DB1C00F83E01 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		DFE298C824E42EB800670996 /* ForzaSheets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForzaSheets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE298CB24E42EB800670996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE298CD24E42EB800670996 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DFE298CF24E42EB800670996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFE298CF24E42EB800670996 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DFE298D224E42EB800670996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFE298D424E42EBB00670996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFE298D724E42EBB00670996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +68,11 @@
 		DFE298E924E42EBB00670996 /* ForzaSheetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForzaSheetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE298ED24E42EBB00670996 /* ForzaSheetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForzaSheetsUITests.swift; sourceTree = "<group>"; };
 		DFE298EF24E42EBB00670996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE298FC24E4360600670996 /* StandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsViewController.swift; sourceTree = "<group>"; };
+		DFE298FE24E4361500670996 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
+		DFE2990024E4362100670996 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		F150EBD18A4C007061B36E7C /* Pods-ForzaSheetsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForzaSheetsTests.release.xcconfig"; path = "Target Support Files/Pods-ForzaSheetsTests/Pods-ForzaSheetsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2CA8CF5F91AD3E3AEF9B097 /* Pods-ForzaSheets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForzaSheets.release.xcconfig"; path = "Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFB4E1B75BCD0508476B6C5 /* Pods_ForzaSheets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73B92DCF8E042F90C129FCB /* Pods_ForzaSheetsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EC341655D5596844677490 /* Pods_ForzaSheets_ForzaSheetsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2828A66427A7B01A1D3CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDD71306D18991A443EF8873 /* Pods_ForzaSheets.framework */,
+				0CE7582ED2C903EE4403A849 /* Pods_ForzaSheets_ForzaSheetsUITests.framework */,
+				734A3E085692FCB6E3736CFA /* Pods_ForzaSheetsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA0DE2BA3BD1AA539BBD7498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				282F61515D52A0EEFBAE2C60 /* Pods-ForzaSheets.debug.xcconfig */,
+				F2CA8CF5F91AD3E3AEF9B097 /* Pods-ForzaSheets.release.xcconfig */,
+				8F75E23891A55A7C1AAF5BB7 /* Pods-ForzaSheets-ForzaSheetsUITests.debug.xcconfig */,
+				CDA0D526F21B668DB103C4DB /* Pods-ForzaSheets-ForzaSheetsUITests.release.xcconfig */,
+				AC9E64001BE3996B77D9C41A /* Pods-ForzaSheetsTests.debug.xcconfig */,
+				F150EBD18A4C007061B36E7C /* Pods-ForzaSheetsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF47163424F3D49A00F83E01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF47163524F3D4B800F83E01 /* Team.swift */,
+				DF47163724F3D7AD00F83E01 /* Standing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF47163A24F3D9AD00F83E01 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DF47163B24F3DB1C00F83E01 /* ApiManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DF47163E24F3E06500F83E01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DFE298BF24E42EB800670996 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +157,8 @@
 				DFE298E124E42EBB00670996 /* ForzaSheetsTests */,
 				DFE298EC24E42EBB00670996 /* ForzaSheetsUITests */,
 				DFE298C924E42EB800670996 /* Products */,
+				CA0DE2BA3BD1AA539BBD7498 /* Pods */,
+				9F2828A66427A7B01A1D3CF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +175,12 @@
 		DFE298CA24E42EB800670996 /* ForzaSheets */ = {
 			isa = PBXGroup;
 			children = (
+				DF47163E24F3E06500F83E01 /* Views */,
+				DF47163A24F3D9AD00F83E01 /* Network */,
+				DF47163424F3D49A00F83E01 /* Models */,
+				DFE298FB24E435E400670996 /* Controller */,
 				DFE298CB24E42EB800670996 /* AppDelegate.swift */,
 				DFE298CD24E42EB800670996 /* SceneDelegate.swift */,
-				DFE298CF24E42EB800670996 /* ViewController.swift */,
 				DFE298D124E42EB800670996 /* Main.storyboard */,
 				DFE298D424E42EBB00670996 /* Assets.xcassets */,
 				DFE298D624E42EBB00670996 /* LaunchScreen.storyboard */,
@@ -128,6 +207,17 @@
 			path = ForzaSheetsUITests;
 			sourceTree = "<group>";
 		};
+		DFE298FB24E435E400670996 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFE298CF24E42EB800670996 /* HomeViewController.swift */,
+				DFE298FC24E4360600670996 /* StandingsViewController.swift */,
+				DFE298FE24E4361500670996 /* TeamDetailsViewController.swift */,
+				DFE2990024E4362100670996 /* PlayerDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFE298F224E42EBB00670996 /* Build configuration list for PBXNativeTarget "ForzaSheets" */;
 			buildPhases = (
+				1FEDE1F6555F6B11642A4A71 /* [CP] Check Pods Manifest.lock */,
 				DFE298C424E42EB800670996 /* Sources */,
 				DFE298C524E42EB800670996 /* Frameworks */,
 				DFE298C624E42EB800670996 /* Resources */,
+				9873B193F0E23A9BCCCB5295 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFE298F524E42EBB00670996 /* Build configuration list for PBXNativeTarget "ForzaSheetsTests" */;
 			buildPhases = (
+				1D17836BF6DBB63D16832113 /* [CP] Check Pods Manifest.lock */,
 				DFE298DA24E42EBB00670996 /* Sources */,
 				DFE298DB24E42EBB00670996 /* Frameworks */,
 				DFE298DC24E42EBB00670996 /* Resources */,
@@ -170,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFE298F824E42EBB00670996 /* Build configuration list for PBXNativeTarget "ForzaSheetsUITests" */;
 			buildPhases = (
+				EE9FFEF87D40F7EEB1FD7012 /* [CP] Check Pods Manifest.lock */,
 				DFE298E524E42EBB00670996 /* Sources */,
 				DFE298E624E42EBB00670996 /* Frameworks */,
 				DFE298E724E42EBB00670996 /* Resources */,
+				CE02E165F4675A7BE8B01C4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +349,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D17836BF6DBB63D16832113 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForzaSheetsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FEDE1F6555F6B11642A4A71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForzaSheets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9873B193F0E23A9BCCCB5295 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE02E165F4675A7BE8B01C4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE9FFEF87D40F7EEB1FD7012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForzaSheets-ForzaSheetsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFE298C424E42EB800670996 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE298D024E42EB800670996 /* ViewController.swift in Sources */,
+				DFE298D024E42EB800670996 /* HomeViewController.swift in Sources */,
+				DF47163C24F3DB1C00F83E01 /* ApiManager.swift in Sources */,
+				DF47163824F3D7AD00F83E01 /* Standing.swift in Sources */,
 				DFE298CC24E42EB800670996 /* AppDelegate.swift in Sources */,
+				DF47163624F3D4B800F83E01 /* Team.swift in Sources */,
+				DFE2990124E4362100670996 /* PlayerDetailsViewController.swift in Sources */,
+				DFE298FD24E4360600670996 /* StandingsViewController.swift in Sources */,
+				DFE298FF24E4361500670996 /* TeamDetailsViewController.swift in Sources */,
 				DFE298CE24E42EB800670996 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +636,7 @@
 		};
 		DFE298F324E42EBB00670996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282F61515D52A0EEFBAE2C60 /* Pods-ForzaSheets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +655,7 @@
 		};
 		DFE298F424E42EBB00670996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CA8CF5F91AD3E3AEF9B097 /* Pods-ForzaSheets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +674,7 @@
 		};
 		DFE298F624E42EBB00670996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC9E64001BE3996B77D9C41A /* Pods-ForzaSheetsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +697,7 @@
 		};
 		DFE298F724E42EBB00670996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F150EBD18A4C007061B36E7C /* Pods-ForzaSheetsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +720,7 @@
 		};
 		DFE298F924E42EBB00670996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F75E23891A55A7C1AAF5BB7 /* Pods-ForzaSheets-ForzaSheetsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +741,7 @@
 		};
 		DFE298FA24E42EBB00670996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA0D526F21B668DB103C4DB /* Pods-ForzaSheets-ForzaSheetsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
