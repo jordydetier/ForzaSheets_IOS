@@ -23,9 +23,10 @@ struct Standing: Codable{
     let teamName: String
     let logo: String
     let group: String
-    let goalDiff: Int
-    let points: Int
+    let forme: String
     let all: StandingMatches
+    let goalsDiff: Int
+    let points: Int
 }
 
 struct StandingMatches: Codable{
