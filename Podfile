@@ -6,7 +6,6 @@ target 'ForzaSheets' do
   use_frameworks!
 
   # Pods for ForzaSheets
-pod 'Alamofire', '~> 5.2'
   target 'ForzaSheetsTests' do
     inherit! :search_paths
     # Pods for testing

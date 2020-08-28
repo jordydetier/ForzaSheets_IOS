@@ -23,7 +23,7 @@ struct Team: Codable{
     let logo : String
     let country : String
     let founded : Int
-    let venue_name : String
-    let venue_city : String
-    let venue_capacity: Int
+    let venue_name : String?
+    let venue_city : String?
+    let venue_capacity: Int?
 }
