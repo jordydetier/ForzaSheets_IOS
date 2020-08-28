@@ -34,7 +34,6 @@ class TeamDetailsViewController: UIViewController, TeamDetailsManagerDelegate {
             networkManager.getTeamDetails(teamId: teamId)
             networkManager.getPlayers(teamId: teamId)
         }
-        // Do any additional setup after loading the view.
     }
     
     func updateTeamDetails(_ teamDetailsManager: TeamDetailsManager, _ getTeamDetailsResponse: GetTeamResponse) {

@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.2.2)
+  - SkeletonView (1.8.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - SkeletonView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  SkeletonView: e37c282c1b228547b83daf47605f79c3aeb1df9a
+
+PODFILE CHECKSUM: 1e7bb432951ab85b5c797b35347088ae92cfea0d
+
+COCOAPODS: 1.9.3

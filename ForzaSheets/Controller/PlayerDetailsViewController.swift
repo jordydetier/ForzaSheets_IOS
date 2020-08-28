@@ -38,25 +38,24 @@ class PlayerDetailsViewController: UIViewController, PlayerDetailsManagerDelegat
             networkManager.delegate = self
             networkManager.getPlayerDetails(playerId: playerId)
         }
-        // Do any additional setup after loading the view.
     }
     
     func updatePlayer(_ playerDetailsManager: PlayerDetailsManager, _ getPlayerDetailResponse: GetPlayerDetailResponse) {
         let player = getPlayerDetailResponse.api.players[0]
         DispatchQueue.main.async {
             DispatchQueue.global(qos: .background).async {
-                           do
-                           {
-                            let data = try Data.init(contentsOf: URL.init(string: self.teamLogoString!)!)
-                               DispatchQueue.main.async {
-                                   let teamCrest: UIImage = UIImage(data: data)!
-                                   self.teamLogo.image = teamCrest
-                               }
-                           }
-                           catch {
-                               print("Error while loading Logo")
-                           }
-                       }
+                do
+                {
+                    let data = try Data.init(contentsOf: URL.init(string: self.teamLogoString!)!)
+                    DispatchQueue.main.async {
+                        let teamCrest: UIImage = UIImage(data: data)!
+                        self.teamLogo.image = teamCrest
+                    }
+                }
+                catch {
+                    print("Error while loading Logo")
+                }
+            }
             self.firstName.text = player.firstname
             self.lastName.text = player.lastname
             self.nationality.text = player.nationality

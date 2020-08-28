@@ -1,0 +1,6 @@
+framework module Pods_ForzaSheets {
+  umbrella header "Pods-ForzaSheets-umbrella.h"
+
+  export *
+  module * { export * }
+}

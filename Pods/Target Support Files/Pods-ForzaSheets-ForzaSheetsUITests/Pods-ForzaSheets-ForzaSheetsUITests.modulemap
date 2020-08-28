@@ -1,0 +1,6 @@
+framework module Pods_ForzaSheets_ForzaSheetsUITests {
+  umbrella header "Pods-ForzaSheets-ForzaSheetsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
