@@ -1144,7 +1144,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-wU-deZ">
                                                         <rect key="frame" x="9" y="553.5" width="40" height="16"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="40" id="7bC-d9-GaI"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="7bC-d9-GaI"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1159,7 +1159,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nationality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1A-QG-PNu">
                                                         <rect key="frame" x="554.5" y="553.5" width="90" height="16"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="90" id="yro-G7-SRu"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="yro-G7-SRu"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

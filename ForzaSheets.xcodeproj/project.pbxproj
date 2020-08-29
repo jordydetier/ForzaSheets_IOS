@@ -70,7 +70,7 @@
 		DF8D250324F6878A0028AB31 /* PlayerTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTeam.swift; sourceTree = "<group>"; };
 		DF8D250524F687980028AB31 /* PlayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetail.swift; sourceTree = "<group>"; };
 		DF8D250724F693C10028AB31 /* PlayerDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsManager.swift; sourceTree = "<group>"; };
-		DFE298C824E42EB800670996 /* ForzaSheets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForzaSheets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE298C824E42EB800670996 /* FSheets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSheets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE298CB24E42EB800670996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE298CD24E42EB800670996 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DFE298CF24E42EB800670996 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		DFE298C924E42EB800670996 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFE298C824E42EB800670996 /* ForzaSheets.app */,
+				DFE298C824E42EB800670996 /* FSheets.app */,
 				DFE298DE24E42EBB00670996 /* ForzaSheetsTests.xctest */,
 				DFE298E924E42EBB00670996 /* ForzaSheetsUITests.xctest */,
 			);
@@ -261,7 +261,7 @@
 			);
 			name = ForzaSheets;
 			productName = ForzaSheets;
-			productReference = DFE298C824E42EB800670996 /* ForzaSheets.app */;
+			productReference = DFE298C824E42EB800670996 /* FSheets.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DFE298DD24E42EBB00670996 /* ForzaSheetsTests */ = {
@@ -679,7 +679,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FSheets.ForzaSheets;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FSheets;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -698,7 +698,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FSheets.ForzaSheets;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FSheets;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
