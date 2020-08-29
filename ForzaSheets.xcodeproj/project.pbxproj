@@ -253,7 +253,6 @@
 				DFE298C424E42EB800670996 /* Sources */,
 				DFE298C524E42EB800670996 /* Frameworks */,
 				DFE298C624E42EB800670996 /* Resources */,
-				9873B193F0E23A9BCCCB5295 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,7 +290,6 @@
 				DFE298E524E42EBB00670996 /* Sources */,
 				DFE298E624E42EBB00670996 /* Frameworks */,
 				DFE298E724E42EBB00670996 /* Resources */,
-				CE02E165F4675A7BE8B01C4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,40 +416,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9873B193F0E23A9BCCCB5295 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets/Pods-ForzaSheets-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE02E165F4675A7BE8B01C4E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForzaSheets-ForzaSheetsUITests/Pods-ForzaSheets-ForzaSheetsUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE9FFEF87D40F7EEB1FD7012 /* [CP] Check Pods Manifest.lock */ = {
